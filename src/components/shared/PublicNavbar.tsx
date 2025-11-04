@@ -27,6 +27,7 @@ import {
 
 import Link from "next/link";
 import { ModeToggle } from "./ModeToggle";
+import HelloDocLogo from "./HelloDocLogo";
 
 const PublicNavbar = () => {
   const features = [
@@ -79,11 +80,9 @@ const PublicNavbar = () => {
     <section className="py-4 ">
       <div className="container">
         <nav className="flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2">
-            <span className="text-lg font-semibold tracking-tighter">
-              HelloDoc
-            </span>
-          </Link>
+         
+            <HelloDocLogo />
+    
           <NavigationMenu className="hidden lg:block">
             <NavigationMenuList>
               <NavigationMenuItem>
@@ -129,9 +128,8 @@ const PublicNavbar = () => {
           </div>
           {/* Mobile view */}
           <div className="flex items-center gap-2 lg:hidden">
-            
-              <ModeToggle />
-          
+            <ModeToggle />
+
             <Sheet>
               <SheetTrigger asChild className="lg:hidden">
                 <Button variant="outline" size="icon">
