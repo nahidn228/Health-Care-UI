@@ -1,10 +1,10 @@
-import { Button } from "@/components/ui/button";
+import { Hero } from "@/components/modules/home/Hero";
+
 
 export default function Home() {
   return (
     <div>
-      <h1>Welcome to Health Care UI</h1>
-      <Button >Click Me</Button>
+      <Hero />
     </div>
   );
 }

@@ -1,7 +1,6 @@
 "use client";
 
 import { MenuIcon } from "lucide-react";
-
 import {
   Accordion,
   AccordionContent,
@@ -82,7 +81,7 @@ const PublicNavbar = () => {
         <nav className="flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
             <span className="text-lg font-semibold tracking-tighter">
-              NH HealthCare
+              HelloDoc
             </span>
           </Link>
           <NavigationMenu className="hidden lg:block">
