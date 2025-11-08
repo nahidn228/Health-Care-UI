@@ -80,9 +80,8 @@ const PublicNavbar = () => {
     <section className="py-4 ">
       <div className="container">
         <nav className="flex items-center justify-between">
-         
-            <HelloDocLogo />
-    
+          <HelloDocLogo />
+
           <NavigationMenu className="hidden lg:block">
             <NavigationMenuList>
               <NavigationMenuItem>
@@ -124,7 +123,9 @@ const PublicNavbar = () => {
           </NavigationMenu>
           <div className="hidden items-center gap-4 lg:flex">
             <ModeToggle />
-            <Button>Sign in</Button>
+            <Link href="/login">
+              <Button>Sign in</Button>
+            </Link>
           </div>
           {/* Mobile view */}
           <div className="flex items-center gap-2 lg:hidden">
@@ -186,7 +187,9 @@ const PublicNavbar = () => {
                     ))}
                   </div>
                   <div className="mt-6 flex flex-col gap-4">
-                    <Button>Sign in</Button>
+                    <Link href="/login">
+                      <Button>Sign in</Button>
+                    </Link>
                   </div>
                 </div>
               </SheetContent>
